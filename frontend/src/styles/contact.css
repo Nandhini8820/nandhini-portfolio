@@ -1,0 +1,248 @@
+/* ---------- Contact ---------- */
+.contact__inner {
+  display: grid;
+  gap: 48px;
+}
+
+@media (min-width: 980px) {
+  .contact__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    align-items: start;
+  }
+}
+
+.contact__intro .section-heading {
+  margin-bottom: 20px;
+}
+
+.contact__headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.contact__text {
+  margin-top: 16px;
+  max-width: 46ch;
+  color: var(--text-2);
+}
+
+.contact__links {
+  list-style: none;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-link svg {
+  color: var(--accent);
+  flex: 0 0 auto;
+  transition: transform 0.2s var(--ease);
+}
+
+.contact-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.contact-link:hover svg {
+  transform: translateX(3px);
+}
+
+.contact__form-panel {
+  padding: clamp(24px, 3.5vw, 40px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form__note {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.contact-form__row {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .contact-form__row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 15.5px;
+}
+
+.field__optional {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 16px/1.5 var(--font-body);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.field input:hover,
+.field textarea:hover {
+  border-color: var(--muted);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+  background: var(--surface);
+}
+
+.field--invalid input,
+.field--invalid textarea {
+  border-color: var(--error);
+}
+
+.field--invalid input:focus,
+.field--invalid textarea:focus {
+  box-shadow: 0 0 0 4px var(--error-soft);
+}
+
+.field__error {
+  color: var(--error);
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.field__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.field__count {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+  min-width: 180px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2.5px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-status {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border-radius: var(--radius-md);
+}
+
+.form-status:focus {
+  outline: none;
+}
+
+.form-status:focus-visible {
+  outline: 3px solid var(--focus);
+}
+
+.form-status svg {
+  flex: 0 0 auto;
+}
+
+.form-status--success {
+  background: var(--success-soft);
+  color: var(--text);
+  padding: 28px;
+}
+
+.form-status--success svg {
+  color: var(--success);
+}
+
+.form-status--success .button {
+  margin-top: 16px;
+}
+
+.form-status__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.form-status--error {
+  background: var(--error-soft);
+  color: var(--text);
+}
+
+.form-status--error svg {
+  color: var(--error);
+}

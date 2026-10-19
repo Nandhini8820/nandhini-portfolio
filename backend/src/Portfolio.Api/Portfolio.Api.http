@@ -1,0 +1,40 @@
+@baseUrl = http://localhost:5080
+
+### Full portfolio content
+GET {{baseUrl}}/api/portfolio
+
+### Projects
+GET {{baseUrl}}/api/projects
+
+### One project
+GET {{baseUrl}}/api/projects/sentinel
+
+### Skills
+GET {{baseUrl}}/api/skills
+
+### Experience
+GET {{baseUrl}}/api/experience
+
+### Health
+GET {{baseUrl}}/health
+
+### Contact (valid)
+POST {{baseUrl}}/api/contact
+Content-Type: application/json
+
+{
+  "name": "Priya Recruiter",
+  "email": "priya@example.com",
+  "company": "Example Corp",
+  "message": "Hi Nandhini, I would like to talk about a senior engineer role."
+}
+
+### Contact (invalid: returns 400 with field errors)
+POST {{baseUrl}}/api/contact
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "not-an-email",
+  "message": "short"
+}

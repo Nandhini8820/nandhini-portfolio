@@ -1,0 +1,15 @@
+**/bin
+**/obj
+**/dist
+**/publish
+**/node_modules
+**/wwwroot
+**/App_Data
+**/.env
+**/.env.*
+!**/.env.example
+**/*.log
+.git
+.vs
+.vscode
+.idea

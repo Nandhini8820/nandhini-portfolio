@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nandhini L | Senior Software Engineer, Full Stack .NET and React</title>
+    <meta
+      name="description"
+      content="Nandhini L is a full stack software engineer with 4+ years of experience building enterprise applications with C#, .NET, React, SQL Server and Azure."
+    />
+    <meta property="og:title" content="Nandhini L | Senior Software Engineer" />
+    <meta property="og:description" content="Full stack engineer bringing legacy enterprise software to the modern web." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#EEF1F5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0E1424" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Apply the saved or system theme before first paint to avoid a flash of the wrong colors.
+      (function () {
+        try {
+          var saved = localStorage.getItem('portfolio-theme');
+          var theme = saved === 'light' || saved === 'dark' ? saved
+            : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>This portfolio needs JavaScript. You can reach Nandhini at nandhinilingaraj199@gmail.com.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

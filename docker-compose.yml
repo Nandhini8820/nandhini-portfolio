@@ -1,0 +1,27 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nandhini-portfolio
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      # Same-origin SPA — no extra CORS origins needed. Add your domain if the API is called cross-origin:
+      # Cors__AllowedOrigins__0: https://your-domain.com
+      Contact__StoreSubmissions: "true"
+      Contact__PermitLimitPerMinute: "5"
+      # Optional email delivery — set these to receive contact messages by email:
+      # Smtp__Host: smtp.your-provider.com
+      # Smtp__Port: "587"
+      # Smtp__Username: your-username
+      # Smtp__Password: your-password
+      # Smtp__FromAddress: portfolio@your-domain.com
+      # Smtp__ToAddress: nandhinilingaraj199@gmail.com
+    volumes:
+      - contact-data:/app/App_Data
+    restart: unless-stopped
+
+volumes:
+  contact-data:

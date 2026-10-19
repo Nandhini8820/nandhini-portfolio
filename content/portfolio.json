@@ -1,0 +1,206 @@
+{
+  "profile": {
+    "name": "Nandhini L",
+    "title": "Senior Software Engineer",
+    "headline": "Full stack engineer bringing legacy enterprise software to the modern web.",
+    "summary": "Full Stack Software Engineer with 4+ years of experience building enterprise applications with C#, .NET Core, .NET Framework, React and Azure. I design REST APIs and microservices, optimize SQL Server queries, and back my work with automated tests in xUnit, Moq and Jest. I use AI-powered development tools such as Claude and GitHub Copilot to streamline delivery.",
+    "focusAreas": [
+      ".NET and C# APIs",
+      "React and TypeScript interfaces",
+      "fast SQL Server queries",
+      "AI-assisted delivery"
+    ],
+    "location": "Hyderabad, Telangana, India",
+    "email": "nandhinilingaraj199@gmail.com",
+    "phone": "+91 95436 33195",
+    "linkedin": "https://www.linkedin.com/in/nandhini-lingaraj-65b645191/",
+    "github": null,
+    "phoneVisibleOnSite": false
+  },
+  "highlight": {
+    "from": "Windows Forms",
+    "to": "React + REST API",
+    "caption": "20+ legacy modules migrated to a modern React and REST API architecture at Vertafore, using AI-assisted development tools."
+  },
+  "skills": [
+    {
+      "category": "Backend",
+      "items": [
+        "C#",
+        ".NET",
+        ".NET Core",
+        "ASP.NET Core",
+        "ASP.NET MVC",
+        "Entity Framework",
+        "LINQ"
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS",
+        "jQuery"
+      ]
+    },
+    {
+      "category": "Databases",
+      "items": [
+        "SQL Server",
+        "Stored procedures",
+        "Indexing",
+        "Query optimization",
+        "Transactions"
+      ]
+    },
+    {
+      "category": "Architecture",
+      "items": [
+        "REST APIs",
+        "MVC",
+        "JSON"
+      ]
+    },
+    {
+      "category": "Testing",
+      "items": [
+        "xUnit",
+        "Moq",
+        "Jest"
+      ]
+    },
+    {
+      "category": "Cloud and DevOps",
+      "items": [
+        "Azure",
+        "AWS",
+        "Docker",
+        "CI/CD",
+        "Git"
+      ]
+    },
+    {
+      "category": "AI-assisted development",
+      "items": [
+        "Claude",
+        "GitHub Copilot",
+        "Amazon Bedrock",
+        "AI-Driven Development Life Cycle (AIDLC)"
+      ]
+    },
+    {
+      "category": "Tools and practices",
+      "items": [
+        "Visual Studio",
+        "VS Code",
+        "Postman",
+        "Agile/Scrum"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "vertafore",
+      "company": "Vertafore",
+      "role": "Senior Software Engineer",
+      "location": "Hyderabad, Telangana",
+      "start": "May 2026",
+      "end": "Present",
+      "highlights": [
+        "Built full-stack features for the AI-powered AMS360 platform with React and .NET.",
+        "Migrated 20+ legacy Windows Forms modules to a modern React and REST API architecture using AI-assisted development tools.",
+        "Fixed 10+ production issues and improved application performance and API response times.",
+        "Wrote and maintained unit tests with xUnit and Moq for .NET and Jest for React.",
+        "Delivered sprint work in an Agile/Scrum team, taking part in code reviews and collaborating with Product and QA."
+      ]
+    },
+    {
+      "id": "odessa",
+      "company": "Odessa Technologies",
+      "role": "Senior Software Engineer",
+      "location": "Bengaluru, Karnataka",
+      "start": "Aug 2022",
+      "end": "Apr 2026",
+      "highlights": [
+        "Developed 50+ enterprise application features with ASP.NET MVC, C# and Entity Framework.",
+        "Built user-friendly UI components with React, JavaScript, jQuery, HTML and CSS.",
+        "Optimized 30+ SQL Server queries and stored procedures to improve application performance.",
+        "Resolved 100+ application defects and carried out unit and functional testing to keep the application stable.",
+        "Worked with developers, QA and business teams in Agile/Scrum to deliver sprint commitments."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "tagline": "AI-powered change intelligence agent",
+      "featured": true,
+      "description": [
+        "Correlates releases, Rally work items, GitLab merge requests and test cases to analyze release risk.",
+        "Modular backend integrations on EF Core and SQL Server support evidence-based production root cause analysis (RCA) and AI-driven recommendations."
+      ],
+      "tech": [
+        "React",
+        "Vite",
+        ".NET Core",
+        "Entity Framework",
+        "SQL Server",
+        "Amazon Bedrock",
+        "Docker"
+      ],
+      "links": {
+        "github": null,
+        "demo": null
+      }
+    },
+    {
+      "id": "retention-risk-analyzer",
+      "name": "Customer Retention Risk Analyzer",
+      "tagline": "AI that identifies customers at risk of churning",
+      "featured": false,
+      "description": [
+        "Identifies at-risk customers from engagement, usage patterns and support history.",
+        "RESTful APIs feed interactive dashboards that visualize churn risk scores and generate AI-driven retention recommendations."
+      ],
+      "tech": [
+        "React",
+        ".NET",
+        "C#",
+        "SQL Server",
+        "AI/LLM"
+      ],
+      "links": {
+        "github": null,
+        "demo": null
+      }
+    }
+  ],
+  "recognition": [
+    {
+      "title": "Top 8 teams, organization-wide AI Hackathon",
+      "description": "Ranked among the top 8 teams for developing an innovative AI-powered solution."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Sri Ramakrishna Engineering College",
+      "degree": "Bachelor of Engineering in Computer Science",
+      "grade": "GPA 8.49",
+      "location": "Coimbatore, Tamil Nadu",
+      "start": "Jul 2019",
+      "end": "May 2023"
+    }
+  ],
+  "familiarWith": {
+    "label": "Also familiar with",
+    "note": "Technologies from my toolkit that I'm comfortable with outside day-to-day production work.",
+    "items": [
+      "Microservices",
+      "gRPC"
+    ]
+  }
+}
